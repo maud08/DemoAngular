@@ -1,0 +1,6 @@
+<h4>Demo 4</h4>
+<p>Contenu de {{maVar}}</p>
+
+<input type="number" [(ngModel)]="maVar">
+<input type="button" (click)="changeValue()" [disabled]="maVar > 5" value="click Me">
+
