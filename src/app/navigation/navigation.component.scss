@@ -1,0 +1,9 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
