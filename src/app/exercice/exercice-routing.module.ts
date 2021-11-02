@@ -5,7 +5,8 @@ import { ExerciceComponent } from './exercice.component';
 const routes: Routes = [
   {path: '', children : [
     {path: 'exercice', component: ExerciceComponent}
-  ]}
+  ]},
+  {path : '**', redirectTo:'notFound'}
 ];
 
 @NgModule({

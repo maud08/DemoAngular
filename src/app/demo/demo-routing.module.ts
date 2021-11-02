@@ -5,7 +5,9 @@ import { DemoComponent } from './demo.component';
 const routes: Routes = [
   {path: '', children : [
     {path: 'demo', component: DemoComponent}
-  ]}
+  ]},
+
+  {path : '**', redirectTo:'notFound'}
 ];
 
 @NgModule({

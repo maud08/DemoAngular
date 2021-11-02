@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { FourOFourComponent } from './four-o-four/four-o-four.component';
 import { EnfantComponent } from './home/enfant/enfant.component';
 import { HomeComponent } from './home/home.component';
 import { NouveauModule } from './nouveau/nouveau.module';
@@ -12,7 +13,10 @@ const routes: Routes = [
   {path : 'about', component : AboutComponent},
   {path : 'nouveau', loadChildren: () => import('./nouveau/nouveau.module').then(m => m.NouveauModule)},
   {path : 'demo', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)},
-  {path: 'exercice', loadChildren: () => import('./exercice/exercice.module').then(m => m.ExerciceModule)}
+  {path: 'exercice', loadChildren: () => import('./exercice/exercice.module').then(m => m.ExerciceModule)},
+
+  {path: 'notfound', component: FourOFourComponent},
+  {path: '**', redirectTo: 'home', pathMatch: 'full'},
 ];
 
 @NgModule({
