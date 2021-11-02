@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Demo4Component implements OnInit {
 
   maVar : number = 0;
+  isClickable : boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -15,5 +16,14 @@ export class Demo4Component implements OnInit {
 
   changeValue(){
     this.maVar = 42;
+  }
+  change() : boolean{
+    if(this.maVar > 5){
+      this.isClickable = true;
+    }
+    else{
+      this.isClickable = false;
+    }
+    return this.isClickable;
   }
 }
