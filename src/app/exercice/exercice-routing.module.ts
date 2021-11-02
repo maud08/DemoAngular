@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExerciceComponent } from './exercice.component';
 
 const routes: Routes = [
-  {path: '', children : [
-    {path: 'exercice', component: ExerciceComponent}
+  {path: '',component: ExerciceComponent, children : [
+   
   ]},
   {path : '**', redirectTo:'notFound'}
 ];

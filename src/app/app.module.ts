@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { EnfantComponent } from './home/enfant/enfant.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FourOFourComponent } from './four-o-four/four-o-four.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
