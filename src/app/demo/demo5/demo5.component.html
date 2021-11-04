@@ -1,0 +1,14 @@
+<h4>Pipes</h4>
+
+<p>Pipes UpperCase : {{maVar1 | uppercase}}</p>
+<p>Pipes LowerCase : {{maVar1 | lowercase}}</p>
+<p>Pipes TitleCase : {{maVar1 | titlecase}}</p>
+
+<p>Pipes Decimal: {{maVar2 | number : '1.0-1'}}</p>
+<p>La date non formatée : {{maVar3}}</p>
+<p>La date formatée : {{maVar3 | date: 'dd-MM-yyyy'}}</p>
+
+<hr/>
+<h4>Custom pipe</h4>
+<p>Température en C° : {{maVar4}} || Température en Fahrenheit : {{maVar4 | toFahrenheit}} </p>
+

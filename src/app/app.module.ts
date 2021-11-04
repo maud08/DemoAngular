@@ -9,6 +9,8 @@ import { EnfantComponent } from './home/enfant/enfant.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
 import { FormsModule } from '@angular/forms';
+import { ToFahrenheitPipe } from './pipes/to-fahrenheit.pipe';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,13 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     EnfantComponent,
     NavigationComponent,
-    FourOFourComponent
+    FourOFourComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
