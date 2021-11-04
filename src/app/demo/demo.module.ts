@@ -14,6 +14,7 @@ import { Demo6Component } from './demo6/demo6.component';
 import { Demo7Component } from './demo7/demo7.component';
 
 
+
 @NgModule({
   declarations: [
     DemoComponent,
@@ -23,7 +24,7 @@ import { Demo7Component } from './demo7/demo7.component';
     Demo4Component,
     Demo5Component,
     Demo6Component,
-    Demo7Component
+    Demo7Component,
   ],
   imports: [
     CommonModule,

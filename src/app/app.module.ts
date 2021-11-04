@@ -10,7 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
-import { ToTimePipe } from './pipes/to-time.pipe';
+
 
 
 @NgModule({

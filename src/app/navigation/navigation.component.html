@@ -1,20 +1,9 @@
-<ul class="nav">
-    <li><a routerLink="home">Home</a></li><br>
-    <li><a routerLink="about">About</a></li><br>
-    <li><a routerLink="demo">Demo</a>
-    <ul>
-        <li><a routerLink="demo/demo1">Demo 1 Binding one way</a></li>
-        <li><a routerLink="demo/demo2">Demo 2 Binding two way</a></li>
-        <li><a routerLink="demo/demo3">Demo 3 Event binding</a></li>
-        <li><a routerLink="demo/demo4">Demo 4 Attribute binding</a></li>
-        <li><a routerLink="demo/demo5">Demo 5 Pipes</a></li>
-        <li><a routerLink="demo/demo6">Demo 6 Component Directive</a></li>
-        <li><a routerLink="demo/demo7">Demo 7 Structural Directive</a></li>
-    </ul>
+<ul class="nav" *ngFor="let lien of listeLien, let i = index">
+    <li><a routerLink="{{lien.url}}" (click)="toggle(i)">{{lien.title}}</a>
+        <ng-container *ngIf="lien.children && lien.isVisible">
+            <ul *ngFor="let lien of lien.children" >
+                <li><a routerLink="{{lien.url}}">{{lien.title}}</a></li>
+            </ul>
+        </ng-container>
     </li><br>
-    <li><a routerLink="exercice">Exercice</a>
-        <ul>
-            <li><a routerLink="exercice/chrono">Chrono</a></li>
-        </ul>
-    </li>
 </ul>

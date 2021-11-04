@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ToFahrenheitPipe } from '../pipes/to-fahrenheit.pipe';
 import { TemperaturePipe } from '../pipes/temperature.pipe';
 import { ToTimePipe } from '../pipes/to-time.pipe';
+import { HighlightDirective } from '../Directives/highlight.directive';
 
 
 
@@ -10,7 +11,8 @@ import { ToTimePipe } from '../pipes/to-time.pipe';
   declarations: [
     ToFahrenheitPipe,
     TemperaturePipe,
-    ToTimePipe
+    ToTimePipe,
+    HighlightDirective
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { ToTimePipe } from '../pipes/to-time.pipe';
   exports: [
     ToFahrenheitPipe,
     TemperaturePipe,
-    ToTimePipe
+    ToTimePipe,
+    HighlightDirective
   ]
 })
 export class SharedModule { }
