@@ -1,0 +1,22 @@
+<h3>Component Directives</h3>
+
+<h4>NgStyle</h4>
+<p [ngStyle]="currentStyle">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nesciunt suscipit numquam 
+    aperiam amet, saepe accusamus laudantium minus cum exercitationem earum praesentium dolorem 
+    eligendi reiciendis eos. Harum sed corporis dolorum.
+</p>
+<input type="button" (click)="switchBold()" value="En gras"/><br/>
+<input type="button" (click)="switchItalic()" value="En italic"/><br/>
+<input type="button" (click)="switchSize()" value="Changer la taille"/><br/>
+
+<hr/>
+<h4>NgClass</h4>
+<p [ngClass]="{maClass : class}">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti omnis ipsum eius, 
+    aspernatur accusamus et officia soluta? Quaerat quidem repellat aspernatur.
+     In odit dolor recusandae impedit aspernatur officia animi laboriosam.
+</p>
+<input type="button" (click)="switchClass()" value="Pique moi les yeux">
+
+
