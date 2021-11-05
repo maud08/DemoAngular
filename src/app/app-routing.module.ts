@@ -15,8 +15,9 @@ const routes: Routes = [
   {path : 'demo', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)},
   {path: 'exercice', loadChildren: () => import('./exercice/exercice.module').then(m => m.ExerciceModule)},
 
-  {path: 'notfound', component: FourOFourComponent},
-  {path: '**', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'notFound', component: FourOFourComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path:'**', redirectTo:'notFound'},
 ];
 
 @NgModule({

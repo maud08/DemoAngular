@@ -4,6 +4,7 @@ import { ToFahrenheitPipe } from '../pipes/to-fahrenheit.pipe';
 import { TemperaturePipe } from '../pipes/temperature.pipe';
 import { ToTimePipe } from '../pipes/to-time.pipe';
 import { HighlightDirective } from '../Directives/highlight.directive';
+import { FourOFourComponent } from '../four-o-four/four-o-four.component';
 
 
 
@@ -12,7 +13,8 @@ import { HighlightDirective } from '../Directives/highlight.directive';
     ToFahrenheitPipe,
     TemperaturePipe,
     ToTimePipe,
-    HighlightDirective
+    HighlightDirective,
+    FourOFourComponent,
   ],
   imports: [
     CommonModule
@@ -21,7 +23,8 @@ import { HighlightDirective } from '../Directives/highlight.directive';
     ToFahrenheitPipe,
     TemperaturePipe,
     ToTimePipe,
-    HighlightDirective
+    HighlightDirective,
+    FourOFourComponent,
   ]
 })
 export class SharedModule { }

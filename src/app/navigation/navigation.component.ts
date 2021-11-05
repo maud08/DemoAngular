@@ -26,7 +26,8 @@ export class NavigationComponent implements OnInit {
         {url:'demo/demo7', title: 'Demo 7 - Structural Directive'},
         {url:'demo/demo8', title: 'Demo 8-  Input/Output'},
         {url:'demo/demo9', title: 'Demo 9 - Les services'},
-        {url:'demo/demo10', title: 'Demo10 - Les Formulaires'}
+        {url:'demo/demo10', title: 'Demo10 - Les Formulaires'},
+        {url:'demo/demo11', title: 'Demo11 - Les formulaires - validator Custom'}
       ]},
       {title : 'Exercices',children:[
         {url:'exercice/chrono',title:'Chrono'},

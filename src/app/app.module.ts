@@ -19,8 +19,7 @@ import { SharedModule } from './shared/shared.module';
     HomeComponent,
     AboutComponent,
     EnfantComponent,
-    NavigationComponent,
-    FourOFourComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
