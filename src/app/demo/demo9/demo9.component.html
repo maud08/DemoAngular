@@ -1,0 +1,4 @@
+<h3>Demo Service + Injection</h3>
+<p>Statut de la variable isConnected : {{isConnected}}</p>
+<input type="button" (click)="login()" value="connexion" *ngIf="!isConnected">
+<input type="button" (click)="logout()" value="Deconnexion" *ngIf="isConnected">

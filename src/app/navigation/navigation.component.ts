@@ -24,11 +24,13 @@ export class NavigationComponent implements OnInit {
         {url:'demo/demo5', title: 'Demo 5 - Pipes'},
         {url:'demo/demo6', title: 'Demo 6 - Component Directive'},
         {url:'demo/demo7', title: 'Demo 7 - Structural Directive'},
-        {url:'demo/demo8', title: 'Demo 8-  Input/Output'}
+        {url:'demo/demo8', title: 'Demo 8-  Input/Output'},
+        {url:'demo/demo9', title: 'Demo 9 - Les services'}
       ]},
       {title : 'Exercices',children:[
         {url:'exercice/chrono',title:'Chrono'},
-        {url:"exercice/shopping",title:'Shopping List'}
+        {url:"exercice/shopping",title:'Shopping List'},
+        {url:'exercice/shopping-service', title:'Shopping avec services'}
       ]}
 
     ]

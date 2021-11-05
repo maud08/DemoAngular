@@ -8,6 +8,8 @@ import { SharedModule } from '../shared/shared.module';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ListComponent } from './shopping-list/list/list.component';
 import { FormsModule } from '@angular/forms';
+import { ShoppingServiceComponent } from './shopping-service/shopping-service.component';
+import { ListServiceComponent } from './shopping-service/list-service/list-service.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { FormsModule } from '@angular/forms';
     ExerciceComponent,
     ChronoComponent,
     ShoppingListComponent,
-    ListComponent
+    ListComponent,
+    ShoppingServiceComponent,
+    ListServiceComponent
   ],
   imports: [
     CommonModule,
