@@ -1,0 +1,5 @@
+<h4>Liste de course</h4>
+<p *ngFor="let item of liste; let i = index">
+    {{item}}
+    <input type="button" value="Delete" (click)="remove(i)">
+</p>

@@ -27,7 +27,8 @@ export class NavigationComponent implements OnInit {
         {url:'demo/demo8', title: 'Demo 8-  Input/Output'}
       ]},
       {title : 'Exercices',children:[
-        {url:'exercice/chrono',title:'Chrono'}
+        {url:'exercice/chrono',title:'Chrono'},
+        {url:"exercice/shopping",title:'Shopping List'}
       ]}
 
     ]

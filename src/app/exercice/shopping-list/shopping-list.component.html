@@ -1,0 +1,5 @@
+<h3>Exo Shopping List</h3>
+<input type="text" [(ngModel)]="article">
+<input type="button" (click)="additem()" value="Ajouter">
+<hr/>
+<app-list [liste]="liste" (deleteItem)="deleteItem($event)"></app-list>
