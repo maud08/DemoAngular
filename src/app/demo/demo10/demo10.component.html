@@ -1,0 +1,15 @@
+<h3>Formulaire</h3>
+
+<form [formGroup]="myFormGroup" (ngSubmit)="SubmitForm()">
+    <p><input type="text" formControlName="control1"></p>
+    <p><input type="email" formControlName="control2"></p>
+    <p *ngIf="!myFormGroup.get('control2').valid"></p>
+
+    <div formArrayName="myArray">
+        <div *ngFor="let control of getArray().controls; let i = index">
+            <p>{{i}} <input type="text" [formControlName]="i"></p>
+        </div>
+    </div>
+
+    <input type="submit" value="Valider" [disabled]="!myFormGroup.valid">
+</form>

@@ -7,7 +7,7 @@ import { ChronoComponent } from './chrono/chrono.component';
 import { SharedModule } from '../shared/shared.module';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ListComponent } from './shopping-list/list/list.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShoppingServiceComponent } from './shopping-service/shopping-service.component';
 import { ListServiceComponent } from './shopping-service/list-service/list-service.component';
 
@@ -25,7 +25,8 @@ import { ListServiceComponent } from './shopping-service/list-service/list-servi
     CommonModule,
     ExerciceRoutingModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ExerciceModule { }
