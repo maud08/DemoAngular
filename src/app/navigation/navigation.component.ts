@@ -23,7 +23,8 @@ export class NavigationComponent implements OnInit {
         {url:'demo/demo4', title: 'Demo 4 - Attribute binding'},
         {url:'demo/demo5', title: 'Demo 5 - Pipes'},
         {url:'demo/demo6', title: 'Demo 6 - Component Directive'},
-        {url:'demo/demo7', title: 'Demo 7 - Structural Directive'}
+        {url:'demo/demo7', title: 'Demo 7 - Structural Directive'},
+        {url:'demo/demo8', title: 'Demo 8-  Input/Output'}
       ]},
       {title : 'Exercices',children:[
         {url:'exercice/chrono',title:'Chrono'}

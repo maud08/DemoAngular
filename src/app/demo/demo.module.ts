@@ -12,6 +12,8 @@ import { Demo5Component } from './demo5/demo5.component';
 import { SharedModule } from '../shared/shared.module';
 import { Demo6Component } from './demo6/demo6.component';
 import { Demo7Component } from './demo7/demo7.component';
+import { Demo8Component } from './demo8/demo8.component';
+import { Enfant2Component } from './demo8/enfant2/enfant2.component';
 
 
 
@@ -25,6 +27,8 @@ import { Demo7Component } from './demo7/demo7.component';
     Demo5Component,
     Demo6Component,
     Demo7Component,
+    Demo8Component,
+    Enfant2Component,
   ],
   imports: [
     CommonModule,
